@@ -8,11 +8,11 @@ from email.header import Header
 
 # 只需要改这些即可，开始
 smtpserver = 'smtp.aliyun.com'
-username = 'dingjian.han@aliyun.com'
+username = 'handingjian@aliyun.com'
 password = 'Beijing159'     # 设置客户端授权码 的 密码
-sender = 'dingjian.han@aliyun.com'
+sender = 'handingjian@aliyun.com'
 # 收件人为多个收件人
-receiver = ['dingjian.han@aliyun.com']
+receiver = ['handingjian@aliyun.com']
 subject = 'Python email test'
 mailbody = "Hi!\nHow are you?\nHere is the link you wanted:\nhttp://www.testfan.cn"
 attachfile = "smail.py"
@@ -21,7 +21,7 @@ attachfile = "smail.py"
 
 msg = MIMEMultipart('mixed')
 msg['Subject'] = subject
-msg['From'] = 'dingjian.han@aliyun.com <dingjian.han@aliyun.com>'
+msg['From'] = 'handingjian@aliyun.com <dhandingjian@aliyun.com>'
 # 收件人为多个收件人,通过join将列表转换为以;为间隔的字符串
 msg['To'] = ";".join(receiver)
 
